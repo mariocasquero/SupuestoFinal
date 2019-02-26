@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# v1 2019-02-26
+# Archivo manifest del supuesto final
+
+index.php
+layout.php
+estilos.css
+
+# Usar desde la red si está disponible
+NETWORK:
+index.php
+
+# Contenido de fallback
+FALLBACK:
+/ index.php
