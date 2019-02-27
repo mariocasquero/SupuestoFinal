@@ -8,7 +8,7 @@
     //Se declara e inicializa el array con los mensajes de error
     $aErrores=[
         "usuarioR"=>NULL,
-        "descripcion"=>NULL,
+        "descripcionR"=>NULL,
         "passwordR"=>NULL,
     ];
     
@@ -23,7 +23,7 @@
     //Si el usuario PULSA ACEPTAR se pasa a validar la información
     if(isset($_REQUEST["aceptar"])){
         $aErrores["usuarioR"]=validacionFormularios::comprobarAlfabetico($_REQUEST["usuarioR"], MAXCODUSUARIO, MINCODDESCUSUARIO, OBLIGATORIO); //Se valida el usuario y se almacenan los posibles errores en el array
-        $aErrores["descripcion"]=validacionFormularios::comprobarAlfaNumerico($_REQUEST["descripcion"], 100, MINCODDESCUSUARIO, OBLIGATORIO); //Se valida la descripción y se almacenan los posibles errores en el array
+        $aErrores["descripcionR"]=validacionFormularios::comprobarAlfaNumerico($_REQUEST["descripcionR"], 100, MINCODDESCUSUARIO, OBLIGATORIO); //Se valida la descripción y se almacenan los posibles errores en el array
         $aErrores["passwordR"]=validacionFormularios::comprobarAlfaNumerico($_REQUEST["passwordR"], 30, 1, OBLIGATORIO); //Se valida el password y se almacenan los posibles errores en el array
         
         //Si el USUARIO con el que se intenta registrar YA EXISTE
@@ -42,7 +42,7 @@
     //Si el usuario PULSA ACEPTAR y NO hay ERRORES
     if(isset($_REQUEST["aceptar"]) && $entradaOK){
         $codUsuario=$_REQUEST["usuarioR"]; //Se almacena el usuario en la variable
-        $descripcion=$_REQUEST["descripcion"]; //Se almacena la descripción en la variable
+        $descripcion=$_REQUEST["descripcionR"]; //Se almacena la descripción en la variable
         $password=$_REQUEST["passwordR"]; //Se almacena el password en la variable
         
         //Se almacena en la variable el resultado del método altaUsuario

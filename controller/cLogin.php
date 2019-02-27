@@ -19,6 +19,13 @@
         exit;
     }
     
+    if(isset($_REQUEST["correo"])){
+        $_SESSION["pagina"]="correo"; //Se guarda en la variable de sesión la ventana de registro
+        header('Location: index.php'); //Se le redirige al index
+        require_once $vistas["layout"]; //Se carga la vista correspondiente
+        exit;
+    }
+    
     //Si el usuario PULSA ACCEDER se pasa a validar la información
     if(isset($_REQUEST["acceder"])){
         $aErrores["usuario"]=validacionFormularios::comprobarAlfabetico($_REQUEST["usuario"], MAXCODUSUARIO, MINCODDESCUSUARIO, OBLIGATORIO); //Se valida el usuario y se almacenan los posibles errores en el array

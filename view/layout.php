@@ -21,22 +21,21 @@
         <link rel="manifest" href="doc/manifiesto.json">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
     
-    <body>
+    <body onload="init()">
         <header>
             <h1>DWEC Supuesto Final</h1>
             <i class="far fa-user"></i>
             <label id="nombre">Acceder</label>
             <form action="<?php ?>" method="post" id="fLogin">
                 <label for="usuario">Usuario </label>
-                <input type="text" name="usuario" id="usuarioL"><br>
-                <label class="errores text-warning"><?php echo $aErrores["usuario"]?></label>
+                <input type="text" name="usuario" id="usuarioL" minlength="3" maxlength="10"><br>
+                <label class="errores text-warning"><?php echo $aErrores["usuario"]?></label><br>
                 
                 <label for="password">Password </label>
-                <input type="password" name="password" id="passwordL"><br>
-                <label class="errores text-warning"><?php echo $aErrores["password"]?></label>
+                <input type="password" name="password" id="passwordL" minlength="3" maxlength="10"><br>
+                <label class="errores text-warning"><?php echo $aErrores["password"]?></label><br>
                 
                 <input type="submit" name="acceder" id="acceder" value="Acceder">
                 <input type="submit" name="registrarse" id="registrarse" value="Registrarse">
@@ -48,9 +47,9 @@
         ?>
         <footer>
             <p>
-                <a href=""><i class="fab fa-gitlab"></i></a>
+                <a href="https://github.com/mariocasquero/SupuestoFinal" target="_blank"><i class="fab fa-github"></i></a>
                 Mario Casquero Jáñez 2019
-                <a href=""><img src="webroot/media/phpdoc.png" id="phpdoc"></a>
+                <a href="doc/noticias.xml"><i class="fas fa-rss-square"></i></a>      
             </p>
         </footer>
     </body>

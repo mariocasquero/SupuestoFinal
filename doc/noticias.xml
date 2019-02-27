@@ -1,0 +1,55 @@
+<rss version="2.0">
+    <channel>
+        <title>Mario Casquero Jañez</title>
+        <link>
+            http://192.168.20.19/DAW209/public_html/ProyectoDWEC/supuestoFinal/index.php
+        </link>
+        <description>Proyecto aplicación</description>
+        <image>
+            <url>
+                http://192.168.20.19/DAW209/public_html/ProyectoDWES/Aplicacion1819/webroot/media/imagenrss.png
+            </url>
+            <title>Imagen RSS</title>
+            <link>
+                http://192.168.20.19/DAW209/public_html/ProyectoDWES/Aplicacion1819/index.php
+            </link>
+            <height>150px</height>
+            <width>200px</width>
+        </image>
+        <item>
+            <title>Imagen 01</title>
+            <link>
+                http://192.168.20.19/DAW209/public_html/ProyectoDWEC/supuestoFinal/webroot/media/diapositivas/fondo1.jpg
+            </link>
+            <description>Imagen 01</description>
+        </item>
+        <item>
+            <title>Imagen 02</title>
+            <link>
+                http://192.168.20.19/DAW209/public_html/ProyectoDWEC/supuestoFinal/webroot/media/diapositivas/fondo2.jpg
+            </link>
+            <description>Imagen 02</description>
+        </item>
+        <item>
+            <title>Imagen 03</title>
+            <link>
+                http://192.168.20.19/DAW209/public_html/ProyectoDWEC/supuestoFinal/webroot/media/diapositivas/fondo3.jpg
+            </link>
+            <description>Imagen 03</description>
+        </item>
+        <item>
+            <title>Imagen 04</title>
+            <link>
+                http://192.168.20.19/DAW209/public_html/ProyectoDWEC/supuestoFinal/webroot/media/diapositivas/fondo4.jpg
+            </link>
+            <description>Imagen 04</description>
+        </item>
+        <item>
+            <title>Imagen 05</title>
+            <link>
+                http://192.168.20.19/DAW209/public_html/ProyectoDWEC/supuestoFinal/webroot/media/diapositivas/fondo5.jpg
+            </link>
+            <description>Imagen 05</description>
+        </item>
+    </channel>
+</rss>

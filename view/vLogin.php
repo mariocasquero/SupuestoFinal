@@ -1,6 +1,8 @@
 <section>
     <article>
-        <h2>WebSockets</h2>
+        <form id="email" method="post" action="<?php echo $_SERVER["PHP_SELF"]?>">
+            <input type="submit" name="correo" id="correo" value="Enviar Correo">
+        </form>
         <iframe width="660px" height="400px" src="https://sway.com/s/OujaBUA0qeGO5DXY/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
     </article>
 </section>
@@ -175,7 +177,7 @@
     //Reproductor música
     var miCancion=new Audio("webroot/media/cancion03.mp3");
     var playPause=false;
-    var playP=document.getElementsByTagName("I")[1];
+    var playP=document.getElementsByTagName("I")[2];
     var volumen=document.getElementById("vlm");
     var tiempo, segundos, minutos, bola, transcurrido;
     segundos=0;

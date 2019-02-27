@@ -15,9 +15,7 @@
         "login"=>"controller/cLogin.php",
         "inicio"=>"controller/cInicio.php",
         "registro"=>"controller/cRegistro.php",
-        "editarPerfil"=>"controller/cEditarPerfil.php",
-        "cambiarPassword"=>"controller/cCambiarPassword.php",
-        "borrarUsuario"=>"controller/cBorrarUsuario.php"
+        "correo"=>"controller/cEnviarCorreo.php"
     ];
     
     //Se almacena en el array asociativo las rutas a las vistas
@@ -26,7 +24,5 @@
         "login"=>"view/vLogin.php",
         "inicio"=>"view/vInicio.php",
         "registro"=>"view/vRegistro.php",
-        "editarPerfil"=>"view/vEditarPerfil.php",
-        "cambiarPassword"=>"view/vCambiarPassword.php",
-        "borrarUsuario"=>"view/vBorrarUsuario.php"
+        "correo"=>"view/vEnviarCorreo.php"
     ];
