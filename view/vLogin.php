@@ -1,7 +1,7 @@
 <section>
     <article>
         <form id="email" method="post" action="<?php echo $_SERVER["PHP_SELF"]?>">
-            <input type="submit" name="correo" id="correo" value="Enviar Correo">
+            <a href="https://www.google.com/intl/es/gmail/about/#" target="_blank"><button type="button" name="correo" id="correo">Correo</button></a>
         </form>
         <iframe width="660px" height="400px" src="https://sway.com/s/OujaBUA0qeGO5DXY/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
     </article>

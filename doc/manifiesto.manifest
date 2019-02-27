@@ -3,8 +3,8 @@ CACHE MANIFEST
 # Archivo manifest del supuesto final
 
 index.php
-layout.php
-estilos.css
+/view/layout.php
+/webroot/css/estilos.css
 
 # Usar desde la red si está disponible
 NETWORK:
@@ -13,3 +13,4 @@ index.php
 # Contenido de fallback
 FALLBACK:
 / index.php
+/ indice.php
